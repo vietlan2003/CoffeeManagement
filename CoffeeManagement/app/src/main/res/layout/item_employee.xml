@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="#F7F8FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+
+        <!-- Thông tin nhân viên -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtEmployeeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Employee Name"
+                android:textSize="16sp"
+                android:textColor="#001833"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtEmployeeUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="12sp"
+                android:textColor="#757575"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/txtEmployeePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textSize="12sp"
+                android:textColor="#757575"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Nút xóa -->
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/btn_delete"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Delete" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

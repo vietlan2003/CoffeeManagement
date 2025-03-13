@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tạo đơn"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/arrow_left"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Total Amount and Checkout Button Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical">
+
+        <!-- Total Amount Section -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng số tiền:"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_regular" />
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 VND"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Checkout Button -->
+        <Button
+            android:id="@+id/pay_button"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Thanh Toán"
+            android:textColor="@android:color/white"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:fontFamily="@font/poppins_semibold" />
+    </LinearLayout>
+
+</LinearLayout>

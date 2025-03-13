@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:background="@android:color/white">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_black"
+        android:textColor="@color/black"
+        android:gravity="center" />
+
+    <!-- Trường Tên sản phẩm -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/employee_username"
+            android:layout_gravity="center" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#D0D0D0"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp" />
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:hint="Tên đăng nhập"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textColorHint="#AAAAAA" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0D0D0" />
+
+    <!-- Trường Giá Sản Phẩm -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/login_password" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#D0D0D0"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:hint="Mật khẩu"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textColorHint="#AAAAAA" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0D0D0" />
+
+    <!-- Trường Mô Tả -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/employee_phone" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#D0D0D0"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:hint="Số điện thoại"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textColorHint="#AAAAAA" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0D0D0" />
+
+    <!-- Trường Số Lượng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/employee_name"
+            android:layout_gravity="center" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#D0D0D0"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:hint="Họ và Tên"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textColorHint="#AAAAAA" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D0D0D0" />
+
+    <!-- Nút Thêm -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/product_background" />
+    </LinearLayout>
+</LinearLayout>
